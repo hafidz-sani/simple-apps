@@ -1,0 +1,15 @@
+name: simple
+
+services:
+  app:
+    image: hafissani39/simple-hafidz
+    build: ./app
+    ports:
+      - "3000:3000"
+    volumes:
+      - "vol-simple:/app/public/images"
+
+volumes:
+  vol-simple:
+
+  
